@@ -162,6 +162,12 @@ jobs:
           buildOrderJson: ${{ steps.ReadSettings.outputs.BuildOrderJson }}
           buildOrderDepth: ${{ steps.ReadSettings.outputs.BuildOrderDepth }}
           workflowDepth: ${{ env.workflowDepth }}
+      
+      - name: Determine Delivery Targets Test
+        id: DetermineDeliveryTargetsTest
+        run: |
+          Write-Host '${{ steps.init.outputs.telemetryScopeJson }}'
+          Write-Host '${{ steps.BuildOrder.outputs.projects1Json }}'
 
   CheckForUpdates:
     runs-on: [ ubuntu-latest ]
