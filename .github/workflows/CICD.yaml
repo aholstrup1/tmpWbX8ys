@@ -157,7 +157,7 @@ jobs:
         id: BuildOrder
         uses: aholstrup1/AL-Go-Actions/DetermineBuildOrder@main
         with:
-          shell: pwsh
+          shell: powershell
           projectsJson: ${{ steps.ReadSettings.outputs.ProjectsJson }}
           buildOrderJson: ${{ steps.ReadSettings.outputs.BuildOrderJson }}
           buildOrderDepth: ${{ steps.ReadSettings.outputs.BuildOrderDepth }}
