@@ -1,0 +1,8 @@
+{
+  "type": "PTE",
+  "runs-on": "ubuntu-latest",
+  "useProjectDependencies": true,
+  "shell": "pwsh",
+  "MicrosoftTelemetryConnectionString": "",
+  "templateUrl": "https://github.com/businesscentralapps/tmpn340n2-PTE@main"
+}
